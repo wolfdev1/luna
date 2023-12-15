@@ -1,0 +1,5 @@
+{
+    "input_too_short": "Input is too short to perform a AI generation. Please enter at least 10 characters",
+    "interaction_error": "It seems that our magical elves have fallen asleep and have not been able to complete your request"
+    
+}
