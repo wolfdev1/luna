@@ -1,4 +1,4 @@
-import { messages } from "./messages.js"
+import { messages } from "./config/messages.js"
 import { event, manage } from "./manager.js"
 import { Client, Events, GatewayIntentBits, Collection }  from 'discord.js';
 

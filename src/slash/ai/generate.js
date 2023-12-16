@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from 'discord.js';
-import { messages } from "../../messages.js";
+import { messages } from "../../config/messages.js";
 import { setTimeout as wait } from 'node:timers/promises';
 import { generate } from "../../ai.js";
 
@@ -28,10 +28,10 @@ export async function execute(interaction) {
         return;
     }
 
-    if (response.length >= 2000) {
-        const short_response = response.substring(0, 1980) + '...';
+    if (response.length >= 1995) {
+        const short_response = response.substring(0, 1990) + '...';
         await interaction.editReply(short_response);
+    } else {
+        await interaction.editReply(response);
     }
-
-    await interaction.editReply(response);
 }

@@ -1,4 +1,4 @@
-import { generate } from "./ai.js"
+import { generate } from "../ai.js"
 import config from "./config.json" assert { type: "json" };
 import msgs from "./messages.json" assert { type: "json" };
 
